@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap');
+
+body{
+    background-image: url(img/fondo.png);
+    background-size:cover;
+    width: 100%;
+}
+
+* {
+    font-family: "Akshar", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    align-items: flex-start;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.seccion_entrada, .seccion_salida {
+    align-items: center;
+    background-color: #f0f0f0bd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    height: 70%;
+    justify-content: center;
+    margin-top: 15px;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+header .logo {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.img_logo {
+    height: auto;
+    max-width: 100%;
+}
+
+.texto_entrada, .texto_salida {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.texto_entrada {
+    height: 60%;
+}
+
+.texto_salida {
+    height: 70%;
+}
+
+.texto_entrada .txt_entrada, .texto_salida .txt_salida {
+    background-color: #ffffff96;
+    border-radius: 12px;
+    border: 1px solid #ccccccc2;
+    font-size: 16px;
+    height: auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.botones {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+    width: auto;
+}
+
+.botones .btn_encriptar, .botones .btn_desencriptar, .copiar .btn_copiar {
+    background-color: #4e5052;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    margin: 3px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    width: 130px;
+}
+
+.copiar .btn_copiar {
+    margin-top: 10px;
+}
+
+.botones .btn_encriptar:hover, .botones .btn_desencriptar:hover, .copiar .btn_copiar:hover {
+    background-color: #0056b3;
+}
+
+.botones .btn_encriptar:active, .botones .btn_desencriptar:active, .copiar .btn_copiar:active {
+    background-color: #e6ebf0;
+}
+
+.muneco {
+    display: flex;
+    justify-content: center;
+}
+
+.muneco .muneco {
+    width: 90%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    position: absolute;
+    text-align: center;
+    width: 40%;
+}
+
+.msj_titulo {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.msj_parrafo {
+    color: #555;
+    font-size: 18px;
+}
+
+/**********************************************************************/
+/* Estilo responsivo para tablets */
+@media (max-width: 900px) {
+
+    body {
+        background-image: url(img/fondo-rota.png);
+    }
+    
+    .container {
+        align-items: center;
+        flex-direction: column;
+        height:60vh;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .seccion_entrada, .seccion_salida {
+        flex: none;
+        margin: 10px 0;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .seccion_entrada {
+        margin-top: 0;      
+    }
+
+    .informacion {
+        width: 60%;
+    }
+
+    .msj_titulo {
+        font-size: 20px;
+    }
+
+    .msj_parrafo {
+        font-size: 15px;
+    }
+
+    .muneco {
+        visibility: hidden;
+    }
+
+}
+
+/* Estilo responsivo para smartphones */
+@media (max-width: 400px) {
+    .container {
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        padding: 5%;
+    }
+
+    .seccion_entrada, .seccion_salida {
+        flex: none;
+        margin: 10px 0;
+        padding: 15px;
+        width: 95%;
+    }
+
+    .seccion_entrada {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .botones {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2%;
+        width: 80%;
+    }
+
+    .botones .btn_encriptar, .botones .btn_desencriptar {
+        justify-content: center;
+        padding: 5% 8%;
+        text-align: center;
+        width: 70%;
+    }
+
+    .muneco {
+        visibility: hidden;
+    }
+
+}
