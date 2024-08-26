@@ -69,13 +69,17 @@ header .logo {
     width: 80%;
 }
 
-.botones {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+.txt_salida {
+    display: none;
+}
+
+.copiar {
+    margin-top: 5px;
+}
+
+.btn_copiar {
+    display: none;
     justify-content: center;
-    margin: 2%;
-    width: auto;
 }
 
 .botones .btn_encriptar, .botones .btn_desencriptar, .copiar .btn_copiar {
@@ -90,10 +94,6 @@ header .logo {
     padding: 10px 20px;
     transition: background-color 0.3s ease;
     width: 130px;
-}
-
-.copiar .btn_copiar {
-    margin-top: 10px;
 }
 
 .botones .btn_encriptar:hover, .botones .btn_desencriptar:hover, .copiar .btn_copiar:hover {
@@ -172,7 +172,7 @@ header .logo {
     }
 
     .muneco {
-        visibility: hidden;
+        display: none;
     }
 
 }
@@ -194,9 +194,28 @@ header .logo {
         width: 95%;
     }
 
+    .seccion_salida {
+        background-color: #ffffff00;
+        margin-top: 50px;
+    }
+
+    .msj_titulo {
+        background-color: #fff;
+        border-radius: 12px;
+        color: #000;
+        padding: 3px;
+    }
+
     .seccion_entrada {
         margin-top: 0;
         text-align: center;
+    }
+
+    .msj_parrafo {
+        background-color: #fff;
+        border-radius: 12px;
+        color: #000;
+        padding: 3px;
     }
 
     .botones {
@@ -216,7 +235,7 @@ header .logo {
     }
 
     .muneco {
-        visibility: hidden;
+        display: none;
     }
 
 }

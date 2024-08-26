@@ -16,28 +16,28 @@
     <div class="container">
         <div class="seccion_entrada">
             <div class="texto_entrada">
-                <textarea name="" class="txt_entrada" placeholder="Ingrese el texto aquí" rows="10" cols="30" id=""></textarea>
+                <textarea name="" class="txt_entrada" placeholder="Ingrese el texto aquí" rows="10" cols="30" id="txt_entrada"></textarea>
             </div>
             <div class="condiciones">
                 <p>Solo letras minúsculas y sin tildes</p>
             </div>
             <div class="botones">
-                <button class="btn_encriptar">Encriptar</button>
-                <button class="btn_desencriptar">Desencriptar</button>
+                <button class="btn_encriptar" onclick="encriptar()" type="button">Encriptar</button>
+                <button class="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         <div class="seccion_salida">
             <div class="muneco">
-                <img src="/img/muneco.png" alt="" class="muneco">
+                <img src="/img/muneco.png" id="img_muneco" alt="" class="muneco">
             </div>
             <div class="texto_salida">
-                <textarea name="txt_salida" class="txt_salida" rows="10" cols="30" id="" hidden></textarea>
+                <textarea name="txt_salida" class="txt_salida" rows="10" cols="30" id="txt_salida"></textarea>
             </div>
-            <div class="copiar" hidden>
-                <button class="btn_copiar">Copiar</button>
+            <div class="copiar">
+                <button class="btn_copiar" id="btn_copiar" onclick="copiar()">Copiar</button>
             </div>
-            <div class="informacion">
-                <h3 class="msj_titulo">
+            <div class="informacion" id="id_informacion">
+                <h3 class="msj_titulo" id="msj_titulo">
                     Ningún mensaje fue encontrado
                 </h3>
                 <p class="msj_parrafo">
@@ -48,4 +48,5 @@
     </div>
     
 </body>
+<script src="app.js"></script>
 </html>
