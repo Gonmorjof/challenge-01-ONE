@@ -30,7 +30,7 @@ El resultado debe ser mostrado en la pantalla.
 
 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
-### Capruras:
+### Capturas:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0840d1bd-a541-4a0c-a2dc-33d23af8bb6b">
